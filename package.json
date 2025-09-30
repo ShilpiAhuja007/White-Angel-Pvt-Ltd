@@ -7,7 +7,8 @@
      "dev": "vite",
   "build": "vite build",
   "preview": "vite preview",
-  "deploy": "gh-pages -d dist"
+  "deploy": "gh-pages -d dist",
+  "homepage" : "https://shilpiahuja007.github.io/White-Angel-Pvt-Ltd/"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
