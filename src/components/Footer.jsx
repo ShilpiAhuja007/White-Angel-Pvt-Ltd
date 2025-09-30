@@ -18,7 +18,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const quickLinks = [
-    { name: 'Home', path: '/' },
+    { name: 'Home', path: '/White-Angel-Pvt-Ltd' },
     { name: 'About Us', path: '/about' },
     { name: 'Join Us', path: '/joinus' }
   ]

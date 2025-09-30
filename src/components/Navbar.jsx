@@ -30,7 +30,7 @@ const Navbar = () => {
   }
 
   const navigationLinks = [
-    { path: '/', label: 'Home' },
+    { path: '/White-Angel-Pvt-Ltd', label: 'Home' },
     { path: '/about', label: 'About Us' },
     { path: '/joinus', label: 'Join Us' }
   ]
@@ -50,7 +50,7 @@ const Navbar = () => {
             {/* Logo Section */}
             <div className="flex items-center space-x-4">
               <Link 
-                to="/" 
+                to="/White-Angel-Pvt-Ltd" 
                 className="flex items-center space-x-3 group"
                 onClick={closeMenu}
               >
