@@ -45,11 +45,11 @@ const JoinUs = () => {
   const storiesRef = useRef(null);
 
   const googleFormUrl =
-    "https://docs.google.com/forms/u/0/d/e/1FAIpQLScqK9epcFicmJOGyG-DORcpKCOFktmm8HzmH1mVkKTAXVjoww/formResponse";
+    "https://docs.google.com/forms/d/e/1FAIpQLSeMCDvn_I2GQm-TDEdBsPyqT7O9KFfpVxdlM3BrCxQb8VloaA/viewform?usp=dialog";
 
   // Add the employer form URL
   const employerFormUrl = 
-    "https://docs.google.com/forms/d/e/1FAIpQLSdPH_34fwwzZZQ-m9Z27XIF_Las1LgKbtY5Qaw6Xb0hOsa50Q/viewform";
+    "https://docs.google.com/forms/d/e/1FAIpQLScEPb5Ejikg_u0MfpIKTgUqRvDQi-9KKlSImoFCeyoISNbCyA/viewform?usp=dialog";
 
   const opportunities = [
     {
