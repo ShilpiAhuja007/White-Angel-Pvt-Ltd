@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base:"/White-Angel-Pvt-Ltd"
+  base: '/White-Angel-Pvt-Ltd/'
 })
