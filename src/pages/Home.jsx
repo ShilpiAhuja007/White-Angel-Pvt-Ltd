@@ -249,7 +249,7 @@ const Home = () => {
   }, [testimonials.length])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+    <div className="min-h-screen w-screen overflow-x-hidden bg-gradient-to-br from-gray-50 to-blue-50">
       
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16 pt-24 lg:py-20 lg:pt-32">
