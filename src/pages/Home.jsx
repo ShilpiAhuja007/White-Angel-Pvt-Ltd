@@ -53,15 +53,13 @@ const Home = () => {
       features: ['End-to-End Services', 'Technical Expertise', 'Wide Database', 'Pan India Network']
     },
     {
-  title: 'Textile & Real Estate Recruitment',
-  subtitle: 'Industry-Specialized Solutions',
-  description: 'Comprehensive talent acquisition for textile manufacturing, garment production, real estate development, and property management sectors.',
-  icon: Building2,
-  image: 'https://images.unsplash.com/photo-1565514020179-026b92b84bb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-  features: ['Textile Manufacturing Experts', 'Garment Industry Professionals', 'Real Estate Specialists', 'Property Management Teams']
-},
-
-   
+      title: 'Textile & Real Estate Recruitment',
+      subtitle: 'Industry-Specialized Solutions',
+      description: 'Comprehensive talent acquisition for textile manufacturing, garment production, real estate development, and property management sectors.',
+      icon: Building2,
+      image: 'https://images.unsplash.com/photo-1565514020179-026b92b84bb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      features: ['Textile Manufacturing Experts', 'Garment Industry Professionals', 'Real Estate Specialists', 'Property Management Teams']
+    },
     {
       title: 'Volume & Bulk Hiring',
       subtitle: 'Start-Ups & Expansion',
@@ -86,7 +84,7 @@ const Home = () => {
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       features: ['Full Management', 'Flexible Processes', 'Scalable Solutions', 'HR Optimization']
     },
-     {
+    {
       title: 'Executive Search & Headhunting',
       subtitle: 'Board & CEO Level',
       description: 'Specialized hiring for Board and CEO Level positions with deeper industry knowledge and broader networks when finding the most qualified candidate.',
@@ -135,30 +133,30 @@ const Home = () => {
     {
       title: 'TALENT ACQUISITION',
       description: 'Access a vast network of qualified professionals to bring your hiring vision to life.',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+      image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       color: 'from-purple-400 to-purple-600',
-      bgColor: 'bg-purple-100'
+      bgColor: 'bg-purple-50'
     },
     {
       title: 'RECRUITMENT CAMPAIGNS',
       description: 'Launch end-to-end recruitment campaigns with world-class sourcing & screening for maximum impact.',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+      image: 'https://www.careersingovernment.com/tools/wp-content/uploads/2016/06/interview-preparation.jpg',
       color: 'from-green-400 to-green-600',
-      bgColor: 'bg-green-100'
+      bgColor: 'bg-green-50'
     },
     {
       title: 'EXECUTIVE SEARCH',
       description: 'Connect with excellent and top-tier leadership talent for Board and C-Suite positions.',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+      image: 'https://kleistech.com/wp-content/uploads/2023/03/executive-search.jpg',
       color: 'from-blue-400 to-blue-600',
-      bgColor: 'bg-blue-100'
+      bgColor: 'bg-blue-50'
     },
     {
       title: 'PAYROLL SOLUTIONS',
       description: 'Comprehensive payroll management with full statutory compliance and audit support.',
-      image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       color: 'from-orange-400 to-orange-600',
-      bgColor: 'bg-orange-100'
+      bgColor: 'bg-orange-50'
     }
   ]
 
@@ -254,7 +252,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16 pt-24 lg:py-20 lg:pt-32">
         <div 
-          className="absolute inset-0 opacity-30"
+          className="absolute inset-0 opacity-90"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`,
             backgroundSize: 'cover',
@@ -276,8 +274,6 @@ const Home = () => {
             ></div>
           ))}
         </div>
-        
-        <div className="absolute inset-0 bg-black/10"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-5xl mx-auto">
@@ -318,7 +314,8 @@ const Home = () => {
                 <span className="font-semibold text-yellow-300"> we've got you covered.</span>
               </p>
 
-              <div className="grid md:grid-cols-3 gap-6 mb-10 text-left">
+              {/* UPDATED: Three boxes with cool animations */}
+              <div className="grid md:grid-cols-3 gap-6 mb-10 text-left perspective-container">
                 {[
                   { title: 'Any Role. Any Industry. Any Location.', desc: 'Connect with talent across IT & Non-IT sectors with our pan-India network.' },
                   { title: 'End-to-End HR Solutions', desc: 'From recruitment to payroll management, we handle your complete HR lifecycle.' },
@@ -326,11 +323,32 @@ const Home = () => {
                 ].map((item, index) => (
                   <div 
                     key={item.title}
-                    className={`bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
-                    style={{ transitionDelay: `${0.8 + index * 0.2}s` }}
+                    className={`group relative bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-white/20 overflow-hidden cursor-pointer ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}
+                    style={{ 
+                      animationDelay: `${0.8 + index * 0.2}s`,
+                      transformStyle: 'preserve-3d'
+                    }}
                   >
-                    <h3 className="font-bold text-lg mb-2">{item.title}</h3>
-                    <p className="text-white/80 text-sm">{item.desc}</p>
+                    {/* Animated gradient background */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-purple-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient"></div>
+                    
+                    {/* Glowing border effect */}
+                    <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-border-glow"></div>
+                    
+                    {/* Content */}
+                    <div className="relative z-10">
+                      <div className="flex items-center mb-3">
+                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-300 to-yellow-500 flex items-center justify-center mr-3 group-hover:rotate-360 group-hover:scale-110 transition-all duration-700">
+                          <Sparkles className="h-5 w-5 text-white animate-pulse" />
+                        </div>
+                        <h3 className="font-bold text-lg group-hover:text-yellow-300 transition-colors duration-300 group-hover:translate-x-2 transform">{item.title}</h3>
+                      </div>
+                      <p className="text-white/80 text-sm group-hover:text-white transition-colors duration-300">{item.desc}</p>
+                    </div>
+                    
+                    {/* Floating particles */}
+                    <div className="absolute top-2 right-2 w-2 h-2 bg-yellow-300 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-float-particle"></div>
+                    <div className="absolute bottom-4 left-4 w-1 h-1 bg-blue-300 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-float-particle" style={{ animationDelay: '0.3s' }}></div>
                   </div>
                 ))}
               </div>
@@ -415,9 +433,8 @@ const Home = () => {
                   <img 
                     src={offering.image}
                     alt={offering.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${offering.color} opacity-60`}></div>
                 </div>
                 
                 <div className={`${offering.bgColor} p-8`}>
@@ -454,10 +471,6 @@ const Home = () => {
           </div>
 
           <div className="flex justify-center items-center">
-            {/* Left side - Images */}
-           
-
-            {/* Right side - Descriptions */}
             <div className="space-y-8">
               {processSteps.map((step, index) => (
                 <div 
@@ -778,62 +791,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="relative py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-hidden">
-        <div 
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        ></div>
-
-        <div className="absolute inset-0">
-          {[...Array(10)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-4 h-4 bg-white/10 rounded-full animate-float"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${8 + Math.random() * 4}s`
-              }}
-            ></div>
-          ))}
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6 animate-fade-in-up">
-            Ready to Build Your
-            <span className="block text-yellow-300 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>Dream Team?</span>
-          </h2>
-          
-          <p className="text-xl text-blue-100 mb-10 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-            Let White Angel Recruitment Services help you connect with the right talent today. 
-            From recruitment to payroll management - we're your complete HR solution partner.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
-            <Link
-              to="/joinus"
-              className="group bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
-            >
-              Start Hiring Today
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <Link
-              to="/about"
-              className="group border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 inline-flex items-center justify-center"
-            >
-              Learn More About Us
-              <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Custom CSS for animations */}
       <style jsx>{`
         @keyframes float {
@@ -861,6 +818,59 @@ const Home = () => {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
         }
+
+        @keyframes slide-up {
+          from {
+            opacity: 0;
+            transform: translateY(50px) scale(0.9);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+          }
+        }
+
+        @keyframes gradient {
+          0%, 100% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+        }
+
+        @keyframes border-glow {
+          0%, 100% {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5), 
+                        0 0 40px rgba(139, 92, 246, 0.3),
+                        inset 0 0 20px rgba(236, 72, 153, 0.2);
+          }
+          50% {
+            box-shadow: 0 0 40px rgba(59, 130, 246, 0.8), 
+                        0 0 60px rgba(139, 92, 246, 0.5),
+                        inset 0 0 40px rgba(236, 72, 153, 0.4);
+          }
+        }
+
+        @keyframes rotate-360 {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes float-particle {
+          0%, 100% {
+            transform: translateY(0) translateX(0);
+            opacity: 0;
+          }
+          50% {
+            transform: translateY(-30px) translateX(10px);
+            opacity: 1;
+          }
+        }
         
         .animate-float {
           animation: float 8s ease-in-out infinite;
@@ -881,6 +891,35 @@ const Home = () => {
         
         .animate-scroll:hover {
           animation-play-state: paused;
+        }
+
+        .animate-slide-up {
+          animation: slide-up 0.8s ease-out forwards;
+        }
+
+        .animate-gradient {
+          background-size: 200% 200%;
+          animation: gradient 3s ease infinite;
+        }
+
+        .animate-border-glow {
+          animation: border-glow 2s ease-in-out infinite;
+        }
+
+        .group:hover .group-hover\\:rotate-360 {
+          animation: rotate-360 0.7s ease-in-out;
+        }
+
+        .animate-float-particle {
+          animation: float-particle 2s ease-in-out infinite;
+        }
+
+        .perspective-container {
+          perspective: 1000px;
+        }
+
+        .group:hover {
+          transform: translateY(-10px) rotateX(5deg);
         }
       `}</style>
     </div>

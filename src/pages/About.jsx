@@ -76,7 +76,7 @@ const About = () => {
       title: 'Executive Search & Headhunting',
       subtitle: 'Board & CEO Level Hiring',
       description: 'Deeper industry and domain knowledge with broader networks and reach. When the challenge is finding the most qualified candidate.',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://kleistech.com/wp-content/uploads/2023/03/executive-search.jpg',
       features: ['Board & CEO Hiring', 'Industry Knowledge', 'Broader Networks', 'Qualified Candidates']
     },
     {
@@ -231,7 +231,7 @@ const About = () => {
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16 pt-24 lg:py-20 lg:pt-32">
         {/* Animated Background */}
         <div 
-          className="absolute inset-0 opacity-30"
+          className="absolute inset-0 opacity-80"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`,
             backgroundSize: 'cover',
@@ -648,7 +648,7 @@ const About = () => {
       <section className="relative py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-hidden">
         {/* Animated Background */}
         <div 
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 opacity-90"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`,
             backgroundSize: 'cover',

@@ -240,9 +240,9 @@ const JoinUs = () => {
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16 pt-24 lg:py-20 lg:pt-32">
         {/* Animated Background */}
         <div
-          className="absolute inset-0 opacity-30"
+          className="absolute inset-0 opacity-90"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`,
+            backgroundImage: `url('https://i.pinimg.com/1200x/a3/51/30/a35130edc8113b0b747ed58f84fa3f8c.jpg')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -348,7 +348,7 @@ const JoinUs = () => {
 
                 <div className="flex items-center text-white/80 text-lg">
                   <Clock className="h-5 w-5 mr-2 animate-bounce" />
-                  <span>10-Day Fast Track Process</span>
+                  <span >10-Day Fast Track Process</span>
                 </div>
               </div>
             </div>
@@ -672,7 +672,7 @@ const JoinUs = () => {
       <section className="relative py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-hidden">
         {/* Background Pattern */}
         <div
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 opacity-80"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`,
             backgroundSize: "cover",
@@ -744,10 +744,7 @@ const JoinUs = () => {
               </a>
             </div>
 
-            <div className="mt-8 flex items-center justify-center text-blue-200 animate-fade-in-up" style={{ animationDelay: '1.2s' }}>
-              <Shield className="h-5 w-5 mr-2" />
-              <span>Your information is 100% secure and confidential</span>
-            </div>
+            
           </div>
         </div>
       </section>
