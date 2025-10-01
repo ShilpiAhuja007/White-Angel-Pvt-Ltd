@@ -253,9 +253,9 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16 pt-24 lg:py-20 lg:pt-32">
         <div 
-          className="absolute inset-0 opacity-90"
+          className="absolute inset-0 opacity-80"
           style={{
-            backgroundImage: `url(${hero})`,
+            backgroundImage: `url('https://icm.aexp-static.com/content/dam/contenthub/us/en/ach-images/2023/10/employee-bond-header.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
