@@ -310,9 +310,9 @@ const Home = () => {
                 </span>
               </h2>
               
-              <p className={`text-lg lg:text-xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: '0.6s' }}>
+              <p className={`text-lg lg:text-xl text-white font-semibold mb-8 max-w-4xl mx-auto leading-relaxed transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: '0.6s' }}>
                 From comprehensive recruitment solutions and executive search, to payroll management and compliance - 
-                <span className="font-semibold text-yellow-300"> we've got you covered.</span>
+                <span className="font-semibold text-yellow-500"> we've got you covered.</span>
               </p>
 
               {/* UPDATED: Three boxes with cool animations */}
