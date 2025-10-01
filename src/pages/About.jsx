@@ -685,7 +685,7 @@ const About = () => {
               </span>
             </h2>
             
-            <p className="text-xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+            <p className="text-xl text-blue-600 mb-10 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
               <strong>10+ years expertise</strong> • <strong>PAN India network</strong> • <strong>24×7 support</strong> • 
               <strong> Complete HR solutions</strong> • <strong>Statutory compliance</strong>
             </p>
@@ -710,10 +710,7 @@ const About = () => {
               </a>
             </div>
 
-            <div className="mt-8 flex items-center justify-center text-blue-200 animate-fade-in-up" style={{ animationDelay: '1.2s' }}>
-              <Shield className="h-5 w-5 mr-2" />
-              <span>Trusted by 200+ companies nationwide</span>
-            </div>
+            
           </div>
         </div>
       </section>
