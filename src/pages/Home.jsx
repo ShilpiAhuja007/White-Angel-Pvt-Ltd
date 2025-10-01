@@ -255,7 +255,7 @@ const Home = () => {
         <div 
           className="absolute inset-0 opacity-80"
           style={{
-            backgroundImage: `url('https://icm.aexp-static.com/content/dam/contenthub/us/en/ach-images/2023/10/employee-bond-header.jpg')`,
+            backgroundImage: `url(${hero})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
