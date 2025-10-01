@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import hero from '../assets/hero.jpg'
 import logo from '../assets/logo.jpeg'
 import { 
   Users, 
@@ -254,7 +255,7 @@ const Home = () => {
         <div 
           className="absolute inset-0 opacity-90"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`,
+            backgroundImage: `url(${hero})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
@@ -661,7 +662,7 @@ const Home = () => {
 
             <div className={`relative transform transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`} style={{ transitionDelay: '0.3s' }}>
               <img 
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                src="https://img.freepik.com/premium-photo/portrait-attractive-professional-asian-business-woman-look-camera-outside-office-building_38052-1717.jpg"
                 alt="Professional Team"
                 className="rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-300"
               />

@@ -41,29 +41,13 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white">
-      {/* Background Pattern */}
-      <div 
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-        }}
-      ></div>
+   
 
       {/* Main Footer Content */}
       <div className="relative">
         {/* Newsletter Section */}
-        <div className=" py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h3 className="text-3xl lg:text-4xl font-bold mb-4">
-              Stay Connected with Opportunities
-            </h3>
-            <p className="text-blue-100 text-xl mb-8 max-w-2xl mx-auto">
-              Look our newsletter for the latest job openings, career tips, and industry insights.
-            </p>
-            
-            
-          </div>
-        </div>
+        
+        
 
         {/* Main Footer Links */}
         <div className="py-20">
@@ -84,9 +68,7 @@ const Footer = () => {
                   </div>
                 </div>
                 
-                <p className="text-blue-100 leading-relaxed mb-8">
-                  WHITE ANGEL RECRUITMENT SERVICES (OPC) PRIVATE LIMITED - Your trusted partner in connecting exceptional talent with outstanding opportunities across industries.
-                </p>
+              
 
                 {/* Contact Information */}
                 <div className="space-y-4">
@@ -157,26 +139,7 @@ const Footer = () => {
                   ))}
                 </ul>
 
-                <div className="mt-8">
-                  <h4 className="text-white font-semibold mb-4">Legal</h4>
-                  <ul className="space-y-2">
-                    <li>
-                      <Link to="/privacy" className="text-blue-200 hover:text-white transition-colors text-sm">
-                        Privacy Policy
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/terms" className="text-blue-200 hover:text-white transition-colors text-sm">
-                        Terms of Service
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/cookies" className="text-blue-200 hover:text-white transition-colors text-sm">
-                        Cookie Policy
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+               
               </div>
 
               {/* Services */}
